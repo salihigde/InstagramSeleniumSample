@@ -15,10 +15,12 @@ namespace InstagramSeleniumSample
 
             insta.Login();
 
+            System.Threading.Thread.Sleep(5000);
+
             var result = insta.FollowUser("INSTAGRAM_USER_TO_FOLLOW");
 
             Console.WriteLine(result);
-            Console.WriteLine();
+            Console.ReadLine();
         }
     }
 }
